@@ -25,13 +25,8 @@ class Categoria extends Model
         ->SELECT(DB::raw('count(*) as qtd_cursos, nome_categoria, categoria_id'))
         ->join('categorias', 'categorias.id', '=', 'cursos.categoria_id')
         ->groupBy('nome_categoria', 'categoria_id')
-        ->paginate(25);
+        ->paginate(15);
     }
 
-    protected static function booted()
-    {
-        self::addGlobalScope('ordered', function(Builder $queryBuilder) {
-            $queryBuilder->orderBy('nome_categoria', 'ASC');
-        });
-    }
+
 }

@@ -29,7 +29,15 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="py-2" style="">
+        {{ $cursos->links('pagination::bootstrap-5') }}
     </div>
     </div>
+
     </div>
+
+    </div>
+
+
 </x-layout>
