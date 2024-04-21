@@ -31,6 +31,6 @@
     </div>
     </div>
     <div class="d-grid mt-5 gap-2 d-md-flex justify-content-md-end">
-        <a href="{{ url()->previous() }}"  class="btn btn-secondary btn-sm" type="button">Voltar</a>
+        <a href="/"  class="btn btn-secondary btn-sm" type="button">Voltar</a>
     </div>
 </x-layout>
