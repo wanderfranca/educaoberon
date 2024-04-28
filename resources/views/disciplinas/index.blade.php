@@ -1,9 +1,8 @@
 <x-layout title="Gerenciador de Provas">
 
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <button class="btn btn-success btn-sm" type="button">+ Novo curso</button>
-</div>
-
+        <button class="btn btn-success btn-sm" type="button"><i class="fa phpdebugbar-fa-plus"></i> Nova Disciplina</button>
+    </div>
     <div class="mt-3 card container">
         <div class="row">
             <div class="col p-3">
@@ -33,8 +32,5 @@
     </table>
     </div>
     </div>
-    </div>
-    <div class="d-grid mt-5 gap-2 d-md-flex justify-content-md-end">
-        <a href="{{ url()->previous() }}"  class="btn btn-secondary btn-sm" type="button">Voltar</a>
     </div>
 </x-layout>
