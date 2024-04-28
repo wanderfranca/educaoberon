@@ -9,7 +9,7 @@ class DisciplinasController extends Controller
 {
     public function index(Curso $curso)
     {
-        $disciplinas = $curso->disciplinas()->get();
+        $disciplinas = $curso->disciplinas()->paginate(15);
 
         return view("disciplinas.index")->with('disciplinas', $disciplinas);
 

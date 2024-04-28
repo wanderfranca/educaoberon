@@ -12,8 +12,8 @@
     {{-- Sidebar --}}
         <aside id="sidebar">
             <div class="h-100">
-                <div class="sidebar-logo">
-                    <a href="#">EducaOberon</a>
+                <div class="sidebar-logo bg-transparent">
+                    <a href="{{ route('home.index') }}">Cetepis Brasil</a>
                 </div>
                 {{-- Sidebar navegação --}}
                 <ul class="sidebar-nav">
@@ -58,8 +58,9 @@
             <main class="content px-3 py-2">
                 <div class="container fluid">
                     <div class="mb-3">
-                        <h3>Gerador de provas</h3>
+
                         {{ $slot }}
+
                     </div>
                 </div>
             </main>

@@ -9,9 +9,7 @@ class CursosController extends Controller
 {
     public function index(Categoria $categoria)
     {
-        $cursos = $categoria->cursos()->get();
-
-        // dd($cursos);
+        $cursos = $categoria->cursos()->paginate(15);
 
         return view("cursos.index")->with('cursos', $cursos)
                                             ->with('categoria', $categoria);

@@ -12,7 +12,7 @@ class CategoriasController extends Controller
     public function index(Request $request)
     {
          $cursos = Categoria::catcursos();
-        // dd($cursos);
+
         return view('home.index',[
                 'cursos' => $cursos,
         ]);
