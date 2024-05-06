@@ -18,32 +18,24 @@
                 {{-- Sidebar navegação --}}
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
-                        Categorias de Ensino
+                        Início
                     </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Matérias
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Cursos
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Disciplinas
-                        </a>
-                    </li>
+                 
+
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">
                             <i class="fa-solid fa-list pe-2"></i>
                             Provas Classificatórias
                         </a>
                     </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Configurações
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </aside>

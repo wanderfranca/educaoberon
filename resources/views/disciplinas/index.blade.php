@@ -22,7 +22,7 @@
                     <tbody>
                         <tr>
                             <td class=""><a href="">{{ $disciplina->nome_disciplina }}</a></td>
-                            <td class="text-center">20</td>
+                            <td class="text-center">{{ ($disciplina->qtd_questoes)? $disciplina->qtd_questoes : '0' }}</td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-gear"></i></a></td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-edit"></i></a></td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-list"></i></a></td>
@@ -31,6 +31,9 @@
                     @endforeach
                     </tbody>
                 </table>
+                <div class="py-2" style="">
+                    {{ $disciplinas->links('pagination::bootstrap-5') }}
+                </div>
             </div>
         </div>
     </div>
