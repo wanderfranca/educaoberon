@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title }}</title>
     @vite(['resources/css/app.css','resources/css/bootstrap.css','resources/js/app.js', 'resources/js/bootstrap.js'])
     <script src="https://kit.fontawesome.com/4f44452ef3.js" crossorigin="anonymous"></script>
   </head>
