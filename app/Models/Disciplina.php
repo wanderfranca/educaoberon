@@ -13,7 +13,7 @@ class Disciplina extends Model
 
     public function curso()
     {
-        return $this->belongsTo(Curso::class);
+        return $this->belongsTo(Curso::class, 'curso_id');
     }
 
     protected static function catquestoes()
@@ -23,5 +23,10 @@ class Disciplina extends Model
         ->join('disciplinas', 'disciplinas.id', '=', 'questoes.disciplina_id')
         ->groupBy('nome_disciplina', 'disciplina_id')
         ->paginate(15);
+    }
+
+    public function questoes()
+    {
+        return $this->hasMany(Questao::class, 'disciplina_id');
     }
 }

@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @vite(['resources/css/app.css','resources/css/bootstrap.css','resources/js/app.js', 'resources/js/bootstrap.js'])
+    <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/4f44452ef3.js" crossorigin="anonymous"></script>
+    <title>{{ $title }}</title>
   </head>
   <body>
     <div class=" wrapper">
@@ -18,7 +21,7 @@
                     <li class="sidebar-header">
                         Início
                     </li>
-                 
+
 
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">

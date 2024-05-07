@@ -14,7 +14,7 @@ class CategoriasController extends Controller
          $cursos = Categoria::catcursos();
 
         return view('home.index',[
-                'cursos' => $cursos,
+                    'cursos' => $cursos,
         ]);
     }
 }

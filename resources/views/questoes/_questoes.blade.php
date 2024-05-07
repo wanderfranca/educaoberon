@@ -11,25 +11,27 @@
                 <table class="table table-sm table-bordered table-hover">
                     <thead class="table-primary">
                         <tr>
-                            <th>Curso</th>
+                            <th>Pergunta</th>
                             <th class="col-sm-1 text-center">Editar</th>
-                            <th class="col-sm-1 text-center">Gerenciar</th>
+                            <th class="col-sm-1 text-center">Tipo</th>
+                            <th class="col-sm-1 text-center">Editar</th>
                             <th class="col-sm-1 text-center">Excluir</th>
                         </tr>
                     </thead>
-                    @foreach ($cursos as $curso)
+                    @foreach($disciplina->questoes as $questao)
                     <tbody>
                         <tr>
-                            <td class=""><a href="{{ route('cursos.disciplinas', $curso->id) }}">{{ $curso->nome_curso }}</a></td>
+                            <td class=""><a href="#">{{ $questao->pergunta }}</a></td>
+                            <td class=""><a href="#">{{ $questao->tipo }}</a></td>
                             <td class="text-center"><a href="#" class="btn"><i class="fa fa-edit text-center"></i></a></td>
-                            <td class="text-center"><a href="#" class="btn"><i class="fa fa-gear text-center"></i></a></td>
+                            <td class="text-center"><a href="#" class="btn"><i class="fa fa-edit text-center"></i></a></td>
                             <td class="text-center"><a href="#" class="btn"><i class="fa fa-trash text-danger text-center"></i></a></td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
                 <div class="py-2" style="">
-                    {{ $cursos->links('pagination::bootstrap-5') }}
+                    {{ $questao->links('pagination::bootstrap-5') }}
                 </div>
             </div>
         </div>

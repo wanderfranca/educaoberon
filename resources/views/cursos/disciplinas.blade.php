@@ -21,8 +21,8 @@
                     @foreach ($disciplinas as $disciplina)
                     <tbody>
                         <tr>
-                            <td class=""><a href="">{{ $disciplina->nome_disciplina }}</a></td>
-                            <td class="text-center">{{ ($disciplina->qtd_questoes)? $disciplina->qtd_questoes : '0' }}</td>
+                            <td class=""><a href="{{ route('disciplinas.questoes', $disciplina->id) }}">{{ $disciplina->nome_disciplina }}</a></td>
+                            <td class="text-center">{{ ($disciplina->questoes_count)? $disciplina->questoes_count : '0' }}</td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-gear"></i></a></td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-edit"></i></a></td>
                             <td class="text-center"><a class="btn" href="#"><i class="fa fa-list"></i></a></td>

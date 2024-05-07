@@ -13,7 +13,7 @@ class Curso extends Model
 
     public function disciplinas()
     {
-        return $this->hasMany(Disciplina::class, 'curso_id', 'id');
+        return $this->hasMany(Disciplina::class, 'curso_id');
     }
 
 }

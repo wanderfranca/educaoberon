@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Disciplina;
 use Illuminate\Http\Request;
 
-class PerguntasController extends Controller
+class QuestoesController extends Controller
 {
-    //
+
 }
+
