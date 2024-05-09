@@ -7,7 +7,7 @@
 
     <div class="mt-3 card container">
         <div class="row">
-            <div class="col-p5">
+            <div class="col p-3">
                 <table class="table table-sm table-bordered table-hover">
                     <thead class="table-primary">
                         <tr>
